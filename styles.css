@@ -2,10 +2,13 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: (33.3%, 33.3%, 33.3%);
+    grid-template-rows: (2fr);
     gap: 10px;
-    justify-items: start; /* start | end | center | stretch */
-    align-items: start; /* start | end | center | stretch */
+    /* --- Items V.S. Content! --- */
+    justify-items: start; /* OPTIONS: start | end | center | stretch */ /* ALSO: justify-self: start | end | center | stretch */
+    align-items: start; /* OPTIONS: start | end | center | stretch */ /* ALSO: align-self: start | end | center | stretch */
+
 }
 
 /* --- Justify [horizontal: left/right] + Align [vertical: up/down] --- */
