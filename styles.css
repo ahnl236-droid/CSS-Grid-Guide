@@ -1,6 +1,13 @@
-/* --- notetaking starts here! --- */ 
-
-
+/* --- notetaking starts here! --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-items: start; /* start | end | center | stretch */
+    align-items: start; /* start | end | center | stretch */
+}
 
 /* --- Justify [horizontal: left/right] + Align [vertical: up/down] --- */
+
 
